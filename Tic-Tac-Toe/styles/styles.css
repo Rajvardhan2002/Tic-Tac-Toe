@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: "Open-Sans", sans-serif;
+  padding: 0;
+  color: rgb(44, 41, 44);
+  background-color: rgb(247, 239, 247);
+}
+#main-header {
+  background-color: rgb(140, 0, 255);
+  color: white;
+  padding: 2rem 5%;
+  text-align: center;
+}
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(140, 0, 255);
+  border: 1px solid rgb(140, 0, 255);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.btn-alt {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(140, 0, 255);
+}
+.btn:hover {
+  background-color: rgb(79, 10, 190);
+  border-color: rgb(79, 10, 190);
+}
+.btn-alt:hover {
+  background-color: rgb(230, 201, 252);
+  border-color: transparent;
+}
+/* setting mobile device properties */
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+@media (min-width: 48rem) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+#backdrop {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+#errorMessage {
+  color: rgb(136, 2, 2);
+  font-weight: bold;
+}
+.error label {
+  color: rgb(136, 2, 2);
+}
+.error input {
+  border-color: rgb(136, 2, 2);
+  background-color: rgb(253, 219, 219);
+  color: rgb(136, 2, 2);
+}
